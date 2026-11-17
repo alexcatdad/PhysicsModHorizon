@@ -1,6 +1,6 @@
 [mod]
 id = "horizon_physics"
-version = "0.20.8"
+version = "0.20.9"
 priority = 100
 
 [compatibility]
@@ -387,7 +387,7 @@ id = "setup-draw"
 kind = "HEAD"
 cancellable = true
 priority = 200
-target = "horizon_client_lib::title::Title::draw"
+target = "horizon_client_lib::title::Title::draw_with_items"
 helper = "setup_draw.rs"
 bindings = [
   { name = "_title", ty = "&Title", value = "self" },
